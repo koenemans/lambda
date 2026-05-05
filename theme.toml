@@ -1,6 +1,6 @@
 name = "Lambda"
 license = "MIT"
-licenselink = "https://github.com/koenemans/lambda/blob/master/LICENSE"
+licenselink = "https://raw.githubusercontent.com/koenemans/repo/main/LICENSE"
 description = "Half-Life inspired dark Hugo theme"
 
 homepage = "https://github.com/koenemans/lambda"

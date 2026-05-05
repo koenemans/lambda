@@ -1,6 +1,8 @@
 # Lambda - A Half-Life Inspired Hugo Theme
 A dark, minimalist Hugo theme featuring Half-Life's iconic dark green and orange color scheme.
 
+![Thumbnail](https://raw.githubusercontent.com/koenemans/repo/main/images/tn.png "Thumbnail")
+
 ## Features
 - **Half-Life Aesthetic**: Dark green backgrounds (#0d1410), orange accents (#ff6600), and green links (#00ff66)
 - **Responsive Images**: Automatic WebP conversion with 1x/2x srcsets
@@ -64,7 +66,7 @@ All theme styles use these custom properties for consistency. You can customize 
 - **Hugo**: v0.112.0 or later (required for WebP image processing)
 
 ## License
-MIT License - See [LICENSE](LICENSE) file for details
+MIT License - See [LICENSE](https://raw.githubusercontent.com/koenemans/repo/main/LICENSE) file for details
 
 ## Credits
 Inspired by the Half-Life video game series by Valve Corporation.
