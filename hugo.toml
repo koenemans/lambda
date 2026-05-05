@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://lambda.pages.dev'
 locale = 'en-US'
-title = 'My New Hugo Project'
+title = 'Lambda'
 
 [menus]
   [[menus.main]]
