@@ -5,7 +5,7 @@ description = "Half-Life inspired dark Hugo theme"
 
 homepage = "https://github.com/koenemans/lambda"
 
-demosite = ""
+demosite = "https://lambda.pages.dev"
 
 tags = ["blog", "personal"]
 features = ["sci-fi aesthetic", "responsive images", "breadcrumb support", "monospaced font"]
