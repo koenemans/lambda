@@ -1,0 +1,24 @@
+{{ define "main" }}
+	<main>
+		<article>
+			<h1>{{ .Title }}</h1>
+			{{ if and .Params.date (not .Params.hideDate) }}
+			<time datetime="{{ .Date | time.Format ":date_medium" }}">{{ .Date | time.Format ":date_medium" }}</time>
+			{{ end }}
+			<section>
+				{{ .Content }}
+			</section>
+			{{ with .Params.tags }}
+			<footer>
+				<strong>Tags:</strong>
+				<ul id="tags">
+					{{ range . }}
+					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+					{{ end }}
+				</ul>
+			</footer>
+			{{ end }}
+		</article>
+	</main>
+{{ partial "sidebar.html" . }}
+{{ end }}

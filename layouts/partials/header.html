@@ -1,0 +1,17 @@
+<header>
+	<h1>
+		<a href="{{ "/" | relURL }}">
+			{{ site.Title }}
+		</a>
+	</h1>
+	{{ with site.Menus.main }}
+	<nav aria-label="Main navigation">
+		<ul>
+			{{ range . }}
+			<li><a href="{{ .URL | relURL }}" {{ if or (eq $.RelPermalink .URL) ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}class="active"{{ end }}>{{ .Name }}</a></li>
+			{{ end }}
+			<li><a href="{{ "index.xml" | absURL }}">RSS</a></li>
+		</ul>
+	</nav>
+	{{ end }}
+</header>

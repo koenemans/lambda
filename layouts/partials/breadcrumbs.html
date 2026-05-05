@@ -1,0 +1,22 @@
+{{ if not .IsHome }}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol aria-label="Breadcrumb navigation">
+    <li><a href="/">Root</a></li>
+    {{ $parts := split .RelPermalink "/" }}
+    {{ $path := "" }}
+    {{ range $i, $part := $parts }}
+      {{ if and (ne $part "") (lt $i (sub (len $parts) 1)) }}
+        {{ $path = printf "%s/%s" $path $part }}
+        <li>
+          <span class="breadcrumb-separator" aria-hidden="true">/</span>
+          {{ if lt $i (sub (len $parts) 2) }}
+            <a href="{{ $path }}/">{{ humanize $part }}</a>
+          {{ else }}
+            <span aria-current="page">{{ humanize $part }}</span>
+          {{ end }}
+        </li>
+      {{ end }}
+    {{ end }}
+  </ol>
+</nav>
+{{ end }}

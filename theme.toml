@@ -1,0 +1,20 @@
+name = "Lambda"
+license = "MIT"
+licenselink = "https://github.com/koenemans/lambda/blob/master/LICENSE"
+description = "Half-Life inspired dark Hugo theme"
+
+homepage = "https://github.com/koenemans/lambda"
+
+demosite = ""
+
+tags = ["blog", "personal"]
+features = ["sci-fi aesthetic", "responsive images", "breadcrumb support", "monospaced font"]
+
+[author]
+    name = "Koenraad"
+    homepage = "https://koenra.ad"
+
+[original]
+    author = "Vimux"
+    homepage = ""
+    repo = "https://github.com/Vimux/blank"
