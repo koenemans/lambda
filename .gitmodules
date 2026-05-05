@@ -1,0 +1,3 @@
+[submodule "themes/lambda"]
+	path = themes/lambda
+	url = https://github.com/koenemans/lambda.git
